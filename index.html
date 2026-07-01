@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
 
   <style>
-    body {
+    html, body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      background: #111827;
+      height: 100%;
+      overflow: hidden; /* removes page scroll */
     }
 
-    a {
-      padding: 14px 24px;
-      background: #4f46e5;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
-    }
-
-    a:hover {
-      background: #3730a3;
+    iframe {
+      width: 100%;
+      height: 100vh; /* full screen height */
+      border: none;
     }
   </style>
 </head>
 
 <body>
 
-  <a href="Pranav_Krishna.pdf" target="_blank">
-    Open Resume
-  </a>
+  <iframe src="Pranav_Krishna.pdf"></iframe>
 
 </body>
 </html>
