@@ -1,13 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .open {
+      background: #4f46e5;
+    }
+
+    .open:hover {
+      background: #3730a3;
+    }
+
+    .download {
+      background: #10b981;
+    }
+
+    .download:hover {
+      background: #047857;
+    }
+  </style>
 </head>
-<body style="margin:0">
-  <iframe 
-    src="Pranav_Krishna.pdf" 
-    width="100%" 
-    height="1000px"
-  ></iframe>
+
+<body>
+
+  <h1>My Resume</h1>
+
+  <a class="btn open" href="Pranav_Krishna.pdf" target="_blank">
+    Open Resume
+  </a>
+
+  <a class="btn download" href="Pranav_Krishna.pdf" download>
+    Download Resume
+  </a>
+
 </body>
 </html>
